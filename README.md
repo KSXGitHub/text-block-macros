@@ -1,5 +1,8 @@
 # Text Block Macros
 
+[![Test](https://github.com/KSXGitHub/text-block-macros/workflows/Test/badge.svg)](https://github.com/KSXGitHub/text-block-macros/actions?query=workflow%3ATest)
+[![Crates.io Version](https://img.shields.io/crates/v/text-block-macros?logo=rust)](https://crates.io/crates/text-block-macros)
+
 Create a multiline string literal.
 
 ## Usage Examples
