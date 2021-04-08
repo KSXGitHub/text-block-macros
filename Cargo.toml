@@ -1,0 +1,28 @@
+[package]
+name = "text-block-macros"
+description = "Create a multiline string literal"
+version = "0.0.0"
+authors = ["khai96_ <hvksmr1996@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+license = "MIT"
+documentation = "https://docs.rs/text-block-macros"
+repository = "https://github.com/KSXGitHub/text-block-macros.git"
+categories = ["no-std", "rust-patterns"]
+keywords = [
+  "string",
+  "literal",
+  "text",
+  "block",
+  "multi-line",
+]
+include = [
+  "*.rs",
+  "/Cargo.toml",
+  "/LICENSE.md",
+  "/README.md",
+]
+
+[lib]
+name = "text_block_macros"
+path = "lib.rs"
