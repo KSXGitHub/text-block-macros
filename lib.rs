@@ -52,3 +52,7 @@ macro_rules! text_block_fnl {
         ::core::concat!($($line, "\n",)*)
     };
 }
+
+#[doc = include_str!("README.md")]
+#[allow(unused)]
+mod test_readme_code_snippets {}
