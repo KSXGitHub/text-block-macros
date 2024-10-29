@@ -27,7 +27,7 @@ macro_rules! text_block {
     };
 
     ($head:literal $($tail:literal)*) => {
-        ::std::concat!($head, "\n", $crate::text_block!($($tail)*))
+        ::std::concat!($head, $("\n", $tail,)*)
     };
 }
 
@@ -49,9 +49,6 @@ macro_rules! text_block {
 #[macro_export]
 macro_rules! text_block_fnl {
     ($($line:literal)*) => {
-        ::std::concat!(
-            $crate::text_block!($($line)*),
-            "\n",
-        )
+        ::std::concat!($($line, "\n",)*)
     };
 }
