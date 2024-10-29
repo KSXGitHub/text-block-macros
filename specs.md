@@ -9,6 +9,11 @@ assert_eq!(text_block! {}, "");
 
 ```rust
 use text_block_macros::text_block;
+assert_eq!(text_block! { "" }, "");
+```
+
+```rust
+use text_block_macros::text_block;
 assert_eq!(text_block! { "single line" }, "single line");
 ```
 
@@ -26,6 +31,11 @@ assert_eq!(text_block! {
 ```rust
 use text_block_macros::text_block_fnl;
 assert_eq!(text_block_fnl! {}, "");
+```
+
+```rust
+use text_block_macros::text_block_fnl;
+assert_eq!(text_block_fnl! { "" }, "\n");
 ```
 
 ```rust
