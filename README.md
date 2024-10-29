@@ -33,4 +33,4 @@ assert_eq!(text, "abc\ndef\nghi\n");
 
 ## License
 
-[MIT](https://git.io/JYptO) © [Hoàng Văn Khải](https://ksxgithub.github.io/).
+[MIT](https://git.io/JYptO) © [Hoàng Văn Khải](https://github.com/KSXGitHub/).
