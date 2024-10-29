@@ -7,7 +7,7 @@
 ///
 /// ```
 /// # #![no_implicit_prelude]
-/// # use ::std::assert_eq;
+/// # use ::core::assert_eq;
 /// use text_block_macros::text_block;
 /// let text = text_block! {
 ///     "abc"
@@ -27,7 +27,7 @@ macro_rules! text_block {
     };
 
     ($head:literal $($tail:literal)*) => {
-        ::std::concat!($head, $("\n", $tail,)*)
+        ::core::concat!($head, $("\n", $tail,)*)
     };
 }
 
@@ -37,7 +37,7 @@ macro_rules! text_block {
 ///
 /// ```
 /// # #![no_implicit_prelude]
-/// # use ::std::assert_eq;
+/// # use ::core::assert_eq;
 /// use text_block_macros::text_block_fnl;
 /// let text = text_block_fnl! {
 ///     "abc"
@@ -49,6 +49,6 @@ macro_rules! text_block {
 #[macro_export]
 macro_rules! text_block_fnl {
     ($($line:literal)*) => {
-        ::std::concat!($($line, "\n",)*)
+        ::core::concat!($($line, "\n",)*)
     };
 }
