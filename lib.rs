@@ -8,7 +8,7 @@
 /// ```
 /// # #![no_implicit_prelude]
 /// # use ::core::assert_eq;
-/// use text_block_macros::text_block;
+/// # use text_block_macros::text_block;
 /// let text = text_block! {
 ///     "abc"
 ///     "def"
@@ -38,7 +38,7 @@ macro_rules! text_block {
 /// ```
 /// # #![no_implicit_prelude]
 /// # use ::core::assert_eq;
-/// use text_block_macros::text_block_fnl;
+/// # use text_block_macros::text_block_fnl;
 /// let text = text_block_fnl! {
 ///     "abc"
 ///     "def"
