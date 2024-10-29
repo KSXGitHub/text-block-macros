@@ -56,3 +56,7 @@ macro_rules! text_block_fnl {
 #[doc = include_str!("README.md")]
 #[allow(unused)]
 mod test_readme_code_snippets {}
+
+#[doc = include_str!("specs.md")]
+#[allow(unused)]
+mod specs {}
